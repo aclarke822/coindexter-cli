@@ -13,7 +13,7 @@ const key = {
 
             return key;
         } catch (err) {
-            console.log(err.message.red);
+            console.error(err.message.red);
         }
     },
     async set() {
@@ -43,7 +43,7 @@ const key = {
 
             return;
         } catch (err) {
-            console.log(err.message.red);
+            console.error(err.message.red);
         }
     }
 }
