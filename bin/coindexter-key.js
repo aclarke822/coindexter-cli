@@ -1,5 +1,6 @@
 const commander = require('commander');
 const key = require('../commands/key')
+
 commander
     .command('set')
     .description('Set API Key')
