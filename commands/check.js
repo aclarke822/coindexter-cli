@@ -1,5 +1,5 @@
 const KeyManager = require('../lib/KeyManager');
-const CryptoAPI = require('../lib/CryptoAPI');
+const NomicsAPI = require('../lib/NomicsAPI');
 
 const check = {
     async price(cmd) {
@@ -7,7 +7,7 @@ const check = {
             keyManager = new KeyManager();
             const key = keyManager.getKey();
 
-            const api = new CryptoAPI(key);
+            const api = new NomicsAPI(key);
 
             const priceOutput = await api.getPriceOutput(cmd.coin, cmd.cur);
 
