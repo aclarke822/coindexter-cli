@@ -1,2 +1,2 @@
 # coindexter-cli
-NodeJS Cryptocurrency CLI Tool
+NodeJS Cryptocurrency CLI Tool - Using Nomics API
