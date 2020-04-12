@@ -35,7 +35,16 @@ const key = {
         }
     },
     del() {
-        console.log("Hello from delete");
+        try {
+            const keyManager = new KeyManager();
+            keyManager.delKey();
+            
+            console.log("Key deleted".blue);
+
+            return;
+        } catch (err) {
+            console.log(err.message.red);
+        }
     }
 }
 
