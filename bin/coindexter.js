@@ -5,6 +5,7 @@ const packageJson = require('../package.json');
 commander
     .version(packageJson.version)
     .command('key', "Manage API Key -- https://nomics.com")
+    .command('check', "Check Coin Price Info")
     .parse(process.argv);
 
 //console.log('Hello from coindexter');
