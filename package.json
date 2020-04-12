@@ -1,0 +1,27 @@
+{
+  "name": "coindexter",
+  "version": "1.0.0",
+  "description": "NodeJS Crypto CLI Tool",
+  "main": "index.js",
+  "bin": "./bin/coindexter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aclarke822/coindexter.git"
+  },
+  "author": "Austin Clarke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aclarke822/coindexter/issues"
+  },
+  "homepage": "https://github.com/aclarke822/coindexter#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.0.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.1.0"
+  }
+}
