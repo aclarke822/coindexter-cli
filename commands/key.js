@@ -5,7 +5,16 @@ const { isRequired } = require('../utils/validation')
 
 const key = {
     get() {
-        console.log("Hello from get");
+        try {
+            const keyManager = new KeyManager();
+            const key = keyManager.getKey();
+            
+            console.log("Current API Key: ", key.yellow);
+
+            return key;
+        } catch (err) {
+            console.log(err.message.red);
+        }
     },
     async set() {
         const keyManager = new KeyManager();
@@ -22,7 +31,7 @@ const key = {
         const key = keyManager.setKey(input.key);
 
         if (key) {
-            console.log('API Key Set'.blue)
+            console.log('API Key Set'.blue);
         }
     },
     del() {
